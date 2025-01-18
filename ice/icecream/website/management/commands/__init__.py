@@ -1,0 +1,1 @@
+from .populate_users import Command as populate_usersCommand
