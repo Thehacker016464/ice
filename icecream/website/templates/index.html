@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Scoops</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  {% load static %}
+  <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV BAR STARTS -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2">
+          <path d="M12 17c5 0 8-2.69 8-6H4c0 3.31 3 6 8 6Zm-4 4h8m-4-3v3M5.14 11a3.5 3.5 0 1 1 6.71 0"></path>
+          <path d="M12.14 11a3.5 3.5 0 1 1 6.71 0"></path>
+          <path d="M15.5 6.5a3.5 3.5 0 1 0-7 0"></path>
+        </svg>
+        Sweet Scoops
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/ingridient">Ingredients Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Customize</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Reviews</a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link" href="/login">login</a>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAV BAR ENDS -->
+
+
+  <!-- CAROUSEL STARTS -->
+
+  <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-image" style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images2.alphacoders.com/132/1323072.png') no-repeat center; height: 100vh; background-size: cover;"></div>
+        <div class="carousel-caption">
+          <h1>Welcome to Sweet Scoops</h1>
+          <p>Discover our delicious homemade ice cream flavors</p>
+          <button class="btn btn-primary btn-lg">View Our Flavors</button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-image" style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://t3.ftcdn.net/jpg/06/14/41/44/360_F_614414451_f6YC1skeHRrzCJuj2j4WLxte67bwnLU3.jpg') no-repeat center; height: 100vh; background-size: cover;"></div>
+        <div class="carousel-caption">
+          <h1>Handcrafted Perfection</h1>
+          <p>Made fresh daily with premium ingredients</p>
+          <button class="btn btn-primary btn-lg">Our Process</button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://t3.ftcdn.net/jpg/07/02/14/48/360_F_702144822_ViFJu59eLWJzoK30B214RIkTuZYxoGUB.jpg'); background-repeat: no-repeat; background-size: cover; height: 100vh; background-position: center;"></div>
+        <div class="carousel-caption">
+          <h1>Seasonal Specialties</h1>
+          <p>Try our limited edition flavors</p>
+          <button class="btn btn-primary btn-lg">Special Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- CAROUSEL ENDS -->
+
+  <!-- CAROUSEL CARD STARTS -->
+<div class="body">
+  <div class="container-fluid mt-5">
+    <div id="iceCreamCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="row mx-1">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="Images/vanilla.jpg" class="card-img-top" alt="Vanilla Ice Cream">
+                    <div class="card-body">
+                      <h5 class="card-title">Vanilla Dream</h5>
+                      <p class="card-text">Classic vanilla bean ice cream with a smooth, creamy texture.</p>
+                    </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card">
+                          <img src="Images/choclate.jpg" class="card-img-top" alt="Chocolate Ice Cream">
+                            <div class="card-body">
+                                <h5 class="card-title">Chocolate Bliss</h5>
+                                <p class="card-text">Rich dark chocolate ice cream made with premium cocoa.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <img src="Images/strawberry.jpg" class="card-img-top" alt="Strawberry Ice Cream">
+                            <div class="card-body">
+                                <h5 class="card-title">Strawberry Fields</h5>
+                                <p class="card-text">Fresh strawberry ice cream with real fruit pieces.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            <!-- Second Slide -->
+            <div class="carousel-item">
+                <div class="row mx-1">
+                    <div class="col-md-4">
+                      <div class="card">
+                            <img src="Images/mint-choclate-chip.jpg" class="card-img-top" alt="Mint Chocolate">
+                            <div class="card-body">
+                              <h5 class="card-title">Mint Chocolate Chip</h5>
+                                <p class="card-text">Cool mint ice cream with dark chocolate chips.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card">
+                              <img src="Images/caramel-swirl.avif" class="card-img-top" alt="Caramel">
+                              <div class="card-body">
+                                <h5 class="card-title">Caramel Swirl</h5>
+                                <p class="card-text">Vanilla ice cream with rich caramel ribbons.</p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="Images/cookie-dough.jpg" class="card-img-top" alt="Cookie Dough">
+                        <div class="card-body">
+                          <h5 class="card-title">Cookie Dough Delight</h5>
+                          <p class="card-text">Vanilla ice cream loaded with chunks of cookie dough.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Slide -->
+            <div class="carousel-item">
+              <div class="row mx-1">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="Images/cofee-crunch.jpg" class="card-img-top" alt="Coffee">
+                    <div class="card-body">
+                      <h5 class="card-title">Coffee Crunch</h5>
+                      <p class="card-text">Rich coffee ice cream with crunchy toffee bits.</p>
+                    </div>
+                        </div>
+                      </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                          <img src="Images/pistochia-paradise.webp" class="card-img-top" alt="Pistachio">
+                          <div class="card-body">
+                            <h5 class="card-title">Pistachio Paradise</h5>
+                            <p class="card-text">Creamy pistachio ice cream with roasted nuts.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card">
+                            <img src="Images/mixed-berry.jpg" class="card-img-top" alt="Berry">
+                            <div class="card-body">
+                              <h5 class="card-title">Mixed Berry Blast</h5>
+                              <p class="card-text">A blend of strawberries, raspberries, and blueberries.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+            <!-- Fourth Slide -->
+            <div class="carousel-item">
+              <div class="row mx-1">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="Images/butterscoth.jpg" class="card-img-top" alt="Butterscotch">
+                        <div class="card-body">
+                          <h5 class="card-title">Butterscotch Ripple</h5>
+                          <p class="card-text">Creamy butterscotch with golden ripple swirls.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="Images/mango.jpg" class="card-img-top" alt="Mango">
+                            <div class="card-body">
+                              <h5 class="card-title">Mango Tango</h5>
+                              <p class="card-text">Fresh mango ice cream with tropical fruit pieces.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <img src="Images/rocky-road.jpg" class="card-img-top" alt="Rocky Road">
+                            <div class="card-body">
+                              <h5 class="card-title">Rocky Road</h5>
+                              <p class="card-text">Chocolate ice cream with marshmallows and nuts.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#iceCreamCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#iceCreamCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <div class="text-end mt-3 me-3">
+        <a href="/menu" class="btn btn-primary">View Full Menu</a>
+    </div>
+</div>
+</div>
+
+<!-- OUR STORY -->
+
+<div class="container-fluid our-story py-5">
+  <div class="row align-items-center">
+    <!-- Image Section -->
+    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+      <img src="Images/bg-our-story.png" alt="Our Story" class="img-fluid">
+    </div>
+    <!-- Content Section -->
+    <div class="col-lg-6 col-md-6 col-sm-12 story-content p-3">
+      <h2 class="text-center text-md-start">The Sweet Scoops Story...</h2>
+      <p>
+        The company was founded in 1972 by Mr. M.C. John, a retired senior bureaucrat in the Kerala government. 
+        It is currently led by Mr. Simon John and his team of eminent directors. The company is a pioneer in the 
+        ice cream industry in South India. The first factory was started in Kochi, and today, it has over 10 factories 
+        and ancillary units spread across South India.
+      </p>
+      <p>
+        The combined production capacity of the 10 factories ranks among the top 5 in the country. The company also 
+        has brand experience centers in Ernakulam, Alappuzha, Kottayam, and Thrissur districts of Kerala, as well 
+        as in Mangalore district of Karnataka. Additionally, the company has overseas operations in parts of the 
+        Middle East and Africa.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEW SECTION  -->
+
+<div class="reviewsection">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2 class="display-4 mb-4">Customer Reviews</h2>
+        <p class="text-muted mb-5">See what our happy customers say about our ice cream!</p>
+      </div>
+    </div>
+
+  <div class="row g-4">
+    <!-- Review 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 review-card">
+          <div class="card-body">
+            <div class="reviewer-profile mb-4">
+              <img src="Images/vijay.avif" alt="Sarah Johnson" class="reviewer-image">
+                  </div>
+                  <div class="stars mb-3">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                    <p class="card-text">"The best ice cream I've ever had! Their chocolate fudge brownie is absolutely divine. The service is always friendly and the place is super clean."</p>
+                    <div class="reviewer-info">
+                      <h6 class="mb-0">JOSEPH VIJAY</h6>
+                      <small class="text-muted">Regular Customer</small>
+                    </div>
+                  </div>
+          </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 review-card">
+          <div class="card-body">
+            <div class="reviewer-profile mb-4">
+              <img src="Images/trisha.webp" alt="Mike Thompson" class="reviewer-image">
+            </div>
+            <div class="stars mb-3">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-half text-warning"></i>
+                  </div>
+                  <p class="card-text">"Amazing variety of flavors! The vanilla bean is so creamy and authentic. Love their seasonal specials too. A must-visit place!"</p>
+                  <div class="reviewer-info">
+                    <h6 class="mb-0">TRISHA KRISHNAN</h6>
+                    <small class="text-muted">Ice Cream Enthusiast</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Review 3 -->
+            <div class="col-md-4">
+              <div class="card h-100 review-card">
+                <div class="card-body">
+                  <div class="reviewer-profile mb-4">
+                      <img src="Images/vj-siddhu.jpg" alt="Emily Chen" class="reviewer-image">
+                  </div>
+                  <div class="stars mb-3">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                    <p class="card-text">"Their dairy-free options are incredible! Finally found a place that caters to my dietary needs without compromising on taste."</p>
+                    <div class="reviewer-info">
+                      <h6 class="mb-0">VJ SIDDHU</h6>
+                      <small class="text-muted">Verified Customer</small>
+                    </div>
+                  </div>
+                </div>
+      </div>
+  </div>
+
+  <!-- Overall Rating -->
+  <div class="row mt-5">
+    <div class="col-12 text-center">
+      <div class="overall-rating p-4">
+        <h3>Overall Rating</h3>
+        <div class="large-stars">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                </div>
+              <p class="rating-text">4.8 out of 5</p>
+              <p class="text-muted">Based on 256 reviews</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER SECTION  -->
+
+<footer class="footer-section py-5">
+  <div class="container">
+      <div class="row">
+          <!-- About Section -->
+          <div class="col-md-3 mb-4">
+              <h3 class="ice-cream-title">Scoops & Smiles</h3>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="footer-link">Our Story</a></li>
+                  <li><a href="#" class="footer-link">Blog</a></li>
+                  <li><a href="#" class="footer-link">Careers</a></li>
+                  <li><a href="#" class="footer-link">Franchise Info</a></li>
+              </ul>
+          </div>
+
+          <!-- Flavors Section -->
+          <div class="col-md-3 mb-4">
+              <h3 class="ice-cream-title">Our Flavors</h3>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="footer-link">Classic Flavors</a></li>
+                  <li><a href="#" class="footer-link">Special Editions</a></li>
+                  <li><a href="#" class="footer-link">Seasonal Menu</a></li>
+                  <li><a href="#" class="footer-link">Toppings Bar</a></li>
+              </ul>
+          </div>
+
+          <!-- Services Section -->
+          <div class="col-md-3 mb-4">
+              <h3 class="ice-cream-title">Services</h3>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="footer-link">Catering</a></li>
+                  <li><a href="#" class="footer-link">Birthday Parties</a></li>
+                  <li><a href="#" class="footer-link">Ice Cream Truck</a></li>
+                  <li><a href="#" class="footer-link">Wholesale</a></li>
+              </ul>
+          </div>
+
+          <!-- Connect Section -->
+          <div class="col-md-3 mb-4">
+              <h3 class="ice-cream-title">Connect With Us</h3>
+              <div class="social-icons">
+                  <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+              </div>
+              <div class="app-downloads mt-4">
+                  <a href="#" class="app-button">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+                  </a>
+                  <a href="#" class="app-button">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store">
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <div class="footer-bottom text-center mt-4">
+          <p>© 2024 Sweet Scoops Ice Cream. All rights reserved. 🍦</p>
+      </div>
+  </div>
+
+  <!-- Floating Ice Cream Elements -->
+  <div class="floating-icecream icecream-1">🍦</div>
+  <div class="floating-icecream icecream-2">🍨</div>
+  <div class="floating-icecream icecream-3">🍧</div>
+</footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
